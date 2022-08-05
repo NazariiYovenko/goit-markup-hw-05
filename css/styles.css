@@ -373,6 +373,7 @@ img {
   line-height: 1.2;
   text-align: center;
 }
+
 /* Команда */
 .command {
   background-color: var(--secondary-background-color);
@@ -428,7 +429,7 @@ img {
   width: 206px;
   margin: 0 auto 30px;
 }
-
+/* TODO: icon box --> */
 .command-icon-box {
   display: flex;
   width: 44px;
@@ -436,7 +437,8 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  transition: background-color var(--main-transition), fill var(--main-transition);
+  /* color: var(--icon-color); */
+  /* transition: background-color var(--main-transition), color var(--main-transition); */
 }
 
 .command-icon-box:not(:last-child) {
@@ -445,17 +447,19 @@ img {
 
 .command-icon-box > .link {
   display: flex;
-  fill: var(--icon-color);
+  color: var(--icon-color);
   transition: fill var(--main-transition);
 }
 
 .command-icon-box:hover {
   background-color: var(--accent);
+  color: var(--invert-text-color);
 }
 
 .command-icon-box:hover > .link {
   fill: var(--invert-text-color);
 }
+/* TODO: <-- icon box  */
 
 /* Клиенты */
 .clients .title {
@@ -528,6 +532,9 @@ img {
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
+
+  transition: background-color var(--main-transition), box-shadow var(--main-transition),
+    color var(--main-transition);
 }
 
 .menu .item:not(:last-child) {
@@ -559,6 +566,8 @@ img {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+
+  transition: box-shadow var(--main-transition);
 }
 
 .portfolio-card:hover {
