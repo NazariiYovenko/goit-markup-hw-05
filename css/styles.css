@@ -653,7 +653,7 @@ img {
 }
 
 .overlay.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0) rotate(360deg);
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .modal {
@@ -668,6 +668,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: transform var(--main-transition);
 }
 
 .modal-close {
